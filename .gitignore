@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.Rhistory
+.RData
+.Rproj.user/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Data and outputs that are usually generated locally
+01_data/clean/
+04_outputs/
+06_temp/
+
+# Keep folder structure, ignore file contents in archive by default
+07_archive/*
+!07_archive/.gitkeep
