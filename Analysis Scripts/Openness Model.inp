@@ -1,0 +1,25 @@
+TITLE: Openness Semantic Network
+
+DATA:
+FILE IS no_intellect_avg.csv;
+
+VARIABLE:
+NAMES ARE
+aes
+emo
+fan;
+
+USEVARIABLES ARE
+aes
+emo
+fan;
+
+MISSING ARE ALL (-99.00);
+
+MODEL:
+open BY aes emo fan;
+
+SAVEDATA: FILE IS latent_no_int.csv; 
+SAVE IS fscores;
+
+OUTPUT: Sampstat Standardized;
